@@ -1,34 +1,24 @@
-package com.unocarrier;
-
-
+package com.practise;
 
 public class Demo {
 
-		public static void main(String[] args) {
-			String str1 = "Hello";
-			String str2 = "Friend";
-			String t;
-
-			System.out.println("Before Swapping");
-			System.out.println("STR1---->"+str1);
-			System.out.println("STR2---->"+str2);
-			
-			
-			str1 = str1 + str2;// "Welcome"+"Hello"="WelcomeHello"
-			str2 = str1.substring(0, str1.length()-str2.length());//"Welcome"
-			str1=  str1.substring(str2.length());
-			
-			
-			
-			
-			System.out.println("After Swapping");
-			
-			System.out.println("STR1---->"+str1);
-			System.out.println("STR2---->"+str2);
-			
-
-
-
+	public static void main(String[] args) {
+		
+		int array1[]= new int[] {1,2,3,4,6,7};
+		int array2[]= new int[array1.length];
+		
+		for(int i=0;i<array1.length;i++) {
+		    array2[i]=array1[i];
+		}
+		System.out.println("elements of original");
+		for(int i=0;i<array1.length;i++) {
+			System.out.print(array1[i]+" ");
+		}	
+			System.out.println("\nelements of new" );
+		
+		for (int i=0;i<array2.length;i++) {
+			System.out.print(array2[i]+" ");
+		}
 	}
 
 }
