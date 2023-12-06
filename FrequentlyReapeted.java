@@ -20,7 +20,7 @@ public class FrequentlyReapeted {
 			System.out.println("---------");
 			System.out.println("element/frequently");
 			System.out.println("---------");
-			for(int i=1;i<array.length;i++) {
+			for(int j=1;j<array.length;j++) {
 				if(freq[i]!=visited)
 					System.out.println(" "+array[i]+" | "+freq[i]);
 			}
